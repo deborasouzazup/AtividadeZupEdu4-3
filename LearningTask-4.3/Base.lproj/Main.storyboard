@@ -70,6 +70,9 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                     <color key="baseBackgroundColor" name="BlueMarguerite"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzR-EI-z7v"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf1-yJ-Xde">
                                                 <rect key="frame" x="0.0" y="72" width="286" height="31"/>
@@ -78,6 +81,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Esqueceu a senha?">
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="esqueceuASenhaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ynR-03-eDr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -110,6 +116,10 @@
                             <constraint firstItem="ees-Ju-7k9" firstAttribute="trailing" secondItem="RL6-zt-8by" secondAttribute="trailing" constant="32" id="zbe-UB-Xng"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="h16-do-Ogz" id="hnw-qW-JDR"/>
+                        <outlet property="senhaTextField" destination="x9G-0a-Qef" id="SDa-K0-mmv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
